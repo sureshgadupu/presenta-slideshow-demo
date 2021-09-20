@@ -1,0 +1,29 @@
+<html>
+  <head>   
+   <script src="libs/presenta.min.js"></script>
+    <title>My first presentation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div id="app">
+    </div>
+    <script>
+        new Presenta('#app', {           
+                        scenes: [{
+                          blocks:[{
+                            type: 'text',
+                            textVar:'title',       
+                            text:`<h3>Welcome to presentation with PRESENTA</h3>`
+                          },
+                          {
+                            type: 'image',
+                            url:'https://picsum.photos/id/1/800/600',       
+                            
+                          }
+                        ]
+                        
+                        }]
+})
+    </script>
+  </body>
+</html>
